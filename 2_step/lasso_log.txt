@@ -1,0 +1,49 @@
+area                                       27325
+bathrooms                                  10188
+rooms                                       5503
+property_subtype_other                      5391
+property_subtype_villa                      4609
+locality_brussels                           4023
+locality_gent                               3422
+is_furnished                                3053
+locality_oostende                           2853
+property_subtype_residence                  2719
+number_floors                               2538
+has_swimming_pool                           2435
+cadastral_income                            2210
+facades_number                              2121
+primary_energy_consumption                  2032
+has_garage                                  1257
+toilets                                     1183
+locality_antwerp                            1158
+locality_tournai                            1115
+locality_other                               871
+has_terrace                                  837
+property_subtype_studio                      684
+has_equipped_kitchen_Not equipped            560
+locality_mouscron                            482
+locality_seraing                             382
+property_subtype_duplex                      380
+running_water                                194
+has_equipped_kitchen_Partially equipped       16
+locality_namur                              -103
+locality_laken                              -153
+leased                                      -153
+locality_liege                              -228
+has_equipped_kitchen_Super equipped         -234
+locality_braine-l-alleud                    -326
+property_type_other                         -416
+locality_turnhout                           -552
+locality_lier                               -742
+locality_roeselare                          -822
+locality_mons                              -1229
+locality_pont-a-celles                     -1513
+locality_nivelles                          -1673
+build_year                                 -1709
+has_garden                                 -1755
+elevator                                   -2073
+locality_wavre                             -2117
+postal_code                                -2152  # !!!
+locality_tubize                            -2218
+property_type_house                        -8372
+

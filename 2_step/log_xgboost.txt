@@ -1,0 +1,14 @@
+Begin to work...
+
+Best params: {'subsample': 0.8, 'reg_lambda': 0.5, 'reg_alpha': 0, 'min_child_weight': 3, 'max_depth': 5, 'gamma': 5, 'colsample_bytree': 0.6}
+Best CV RMSE: 67333.3614
+
+=== TEST METRICS ===
+RMSE: 68918.9712
+MAE : 36361.3272
+R2  : 0.3333
+
+Timer: 12 sec
+
+
+Task completed!

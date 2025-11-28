@@ -82,7 +82,7 @@ for train_idx, val_idx in kf.split(X_meta_train):
     i+=1
     
 # ----- 3. Compute loss for each row of meta_train -----
-# Using absolute error; you can switch to squared error, MAPE, etc.
+# Using absolute error; It's AE, like MAE
 loss = np.abs(y_meta_train.to_numpy() - y_pred_oof)
 
 # ----- 4. Build loss_dataset -----
