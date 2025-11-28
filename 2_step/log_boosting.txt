@@ -1,0 +1,16 @@
+Begin to work...
+
+Best parameters (tree structure): {'max_depth': 5}
+CV RMSE: 66720.2751
+Best parameters (LR + estimators): {'learning_rate': 0.03, 'n_estimators': 600}
+CV RMSE: 66518.2640
+
+=== TEST METRICS ===
+RMSE: 68303.0305
+MAE : 35983.0079
+R2  : 0.3452
+
+Timer: 1049 sec
+
+
+Task completed!

@@ -36,17 +36,17 @@ min_val = df[col].min()
 print(f"{col}: mean = {mean_val:.2f}, median = {median_val:.2f}, max = {max_val}, min = {min_val}")
 
 '''
-rows: 14181, columns: 51
+rows: 16207, columns: 51
 
 loss: 
-mean = 56143, 
-median = 32003, 
-max = 1279180,
-min = 10.2
+mean = 56288, 
+median = 32032, 
+max = 1332406, 
+min = 0.32
 ''' 
 #############################################
 
-if(0): 
+if(1): 
     import matplotlib.pyplot as plt
     import seaborn as sns
     
@@ -58,7 +58,7 @@ if(0):
     plt.xlabel(col)
     plt.ylabel('Frequency')
     plt.tight_layout()
-    if(0):
+    if(1):
         plt.savefig("loss_distribution.png", dpi=150)
     plt.show() 
 

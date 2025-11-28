@@ -39,7 +39,7 @@ X = df.drop("price", axis=1)
 y = df["price"]
 
 X_meta_train, X_meta_test, y_meta_train, y_meta_test = train_test_split(
-    X, y, test_size=0.3, random_state=RANDOM_STATE
+    X, y, test_size=0.2, random_state=RANDOM_STATE
 )
 
 #############################################

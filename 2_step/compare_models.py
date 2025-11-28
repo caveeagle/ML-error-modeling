@@ -37,14 +37,13 @@ X_train, X_test, y_train, y_test = train_test_split(
     X_loss,
     y_loss,
     test_size=0.2,
-    shuffle=True,
     random_state=RANDOM_STATE
 )
 
 #############################################
 #############################################
 
-MODEL_NUM = 1  # Choose the model
+MODEL_NUM = 2  # Choose the model
 
 #############################################
 
@@ -54,29 +53,47 @@ if(MODEL_NUM==1):
     model_name = 'Gradient Boosting'
     
     best_model = GradientBoostingRegressor(
-        n_estimators=600,        
-        learning_rate=0.05,
-        max_depth=4,
-        min_samples_leaf=50,
+        n_estimators=800,        
+        learning_rate=0.01,
+        max_depth=5,
         subsample=0.9,
         random_state=RANDOM_STATE
     )
+
+if(MODEL_NUM==2):
+
+    model_name = 'XGBoost'
+    
+    best_model = XGBRegressor(
+        objective="reg:squarederror",
+        n_estimators=1200,
+        learning_rate=0.05,
+        subsample=0.7,
+        reg_lambda=5,
+        max_depth=7,
+        gamma = 0.5,
+        colsample_bytree=0.6,
+        tree_method='hist',
+        random_state=RANDOM_STATE,
+        n_jobs=-1
+    )
+
 
 #############################################
 
 best_model.fit(X_train, y_train)
 
-best_pred  = best_model.predict(X_test)
+y_pred  = best_model.predict(X_test)
 
 #############################################
 
-best_r2  = r2_score(y_test, best_pred)
+best_r2  = r2_score(y_test, y_pred)
 
-best_rmse = np.sqrt(mean_squared_error(y_test, best_pred))
+best_rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 
-best_mae = mean_absolute_error(y_test, best_pred)
+best_mae = mean_absolute_error(y_test, y_pred)
 
-print(f"{model_name} - R2: {best_r2:.4f}, RMSE: {best_rmse:.4f}, MAE: {best_mae:.4f}")
+print(f"{model_name} - R2: {best_r2:.3f}")
 
 #############################################
 
