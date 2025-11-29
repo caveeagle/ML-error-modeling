@@ -43,7 +43,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 #############################################
 #############################################
 
-MODEL_NUM = 2  # Choose the model
+MODEL_NUM = 1  # Choose the model
 
 #############################################
 
@@ -59,7 +59,9 @@ if(MODEL_NUM==1):
         subsample=0.9,
         random_state=RANDOM_STATE
     )
-
+    
+    # Gradient Boosting - R2: 0.335
+    
 if(MODEL_NUM==2):
 
     model_name = 'XGBoost'
@@ -77,7 +79,8 @@ if(MODEL_NUM==2):
         random_state=RANDOM_STATE,
         n_jobs=-1
     )
-
+    
+    # XGBoost - R2: 0.336
 
 #############################################
 
