@@ -81,7 +81,7 @@ predicted_loss_full = error_model.predict(X_loss_full)
 # Split full dataset by predicted difficulty
 #############################################
 
-threshold = np.quantile(predicted_loss_full, 0.70)
+threshold = np.quantile(predicted_loss_full, 0.7)
 
 mask_difficult = predicted_loss_full >= threshold
 mask_easy = ~mask_difficult
