@@ -26,6 +26,7 @@ from tensorflow.keras.layers import Dense, Dropout, BatchNormalization
 from tensorflow.keras.regularizers import l2
 from tensorflow.keras.callbacks import ReduceLROnPlateau
 
+from joblib import dump
 #############################################
 
 from pathlib import Path
@@ -253,6 +254,23 @@ print(f"Loss gap: {gap:.4f}")
 
 if(1):
     model.save("../models/alternative_model.keras")
+    
+    #############################################
+    # Save preprocessing objects for alternative_model
+    #############################################
+    
+    # StandardScaler for numeric features
+    dump(num_scaler, "../models/alt_num_scaler.joblib")
+    
+    # StandardScaler for target y_true
+    dump(y_scaler, "../models/alt_y_scaler.joblib")
+    
+    # Mapping postal_code -> index for Embedding
+    dump(postal_to_index, "../models/alt_postal_mapping.joblib")
+    
+    # List of "other" columns (their order is important!)
+    dump(other_cols, "../models/alt_other_cols.joblib")
+    
 
 #############################################
 
