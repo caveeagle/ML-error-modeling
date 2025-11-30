@@ -79,3 +79,12 @@ Best train_loss epoch: 8
 Loss gap: 0.1089
 
 Task completed!
+R2 on test set:0.274
+The best epoch: 6
+Best (min) val_loss: 0.7357
+Best train_loss: 0.6725
+Best val_loss epoch: 6
+Best train_loss epoch: 11
+Loss gap: 0.0633
+
+Task completed!

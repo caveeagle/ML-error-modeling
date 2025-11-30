@@ -92,10 +92,21 @@ loss_dataset["y_pred_oof"]  = y_pred_oof               # OOF predictions of the 
 loss_dataset["loss"]        = loss                     # error (target for the error model)
 
 # Save dataset
-filename_loss = '../data/loss_dataset.csv'
-loss_dataset.to_csv(filename_loss, sep=',', index=False)
+if(0):
+    filename_loss = '../data/loss_dataset.csv'
+    loss_dataset.to_csv(filename_loss, sep=',', index=False)
 
-
+if(1):
+    
+    # Train final model on full meta_train
+    final_model = clone(model)
+    final_model.fit(X_meta_train, y_meta_train)
+    
+    # Save it
+    from joblib import dump
+    dump(final_model, '../models/best_model.joblib')
+    
+    print("Final model saved!")
 #############################################
 
 print('\nTask completed!')

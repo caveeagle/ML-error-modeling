@@ -1,0 +1,46 @@
+R2 on test set:-4.848
+The best epoch: 7
+Best (min) val_loss: 0.7752
+Best train_loss: 0.6961
+Best val_loss epoch: 7
+Best train_loss epoch: 12
+Loss gap: 0.0791
+
+Task completed!
+R2 on test set:0.197
+The best epoch: 2
+Best (min) val_loss: 0.7407
+Best train_loss: 0.7144
+Best val_loss epoch: 2
+Best train_loss epoch: 7
+Loss gap: 0.0263
+
+Task completed!
+R2 on test set:0.218
+The best epoch: 2
+Best (min) val_loss: 0.7332
+Best train_loss: 0.7026
+Best val_loss epoch: 2
+Best train_loss epoch: 7
+Loss gap: 0.0306
+
+Task completed!
+R2 on test set:0.218
+The best epoch: 2
+Best (min) val_loss: 0.7332
+Best train_loss: 0.7026
+Best val_loss epoch: 2
+Best train_loss epoch: 7
+Loss gap: 0.0306
+
+Task completed!
+R2 on scaled log1p(loss): 0.252
+R2 on test set:0.218
+The best epoch: 2
+Best (min) val_loss: 0.7332
+Best train_loss: 0.7026
+Best val_loss epoch: 2
+Best train_loss epoch: 7
+Loss gap: 0.0306
+
+Task completed!

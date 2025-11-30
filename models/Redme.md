@@ -1,0 +1,1 @@
+This directory contains trained model files. Due to size limitations, these files are included in the `.gitignore`.
