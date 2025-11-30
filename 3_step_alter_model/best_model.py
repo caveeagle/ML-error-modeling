@@ -53,7 +53,7 @@ df = pd.read_csv(dataset_filename, delimiter=',')
 y = df["y_true"].values.reshape(-1, 1)  
 
 # Remove unnecessary columns
-df = df.drop(columns=['cadastral_income','loss','y_pred_oof'])  
+df = df.drop(columns=['cadastral_income','loss','y_pred_oof','y_true'])  
 
 # Embedding column
 postal = df["postal_code"].astype(int).values
